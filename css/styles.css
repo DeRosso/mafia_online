@@ -7,8 +7,10 @@
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
 	padding: 0;
-}.line_2 p {
-	margin: 0!important;
+}
+.line_2 p {
+	margin-top: 0!important;
+	margin-bottom: 0!important;
 }
  .frame {
 	 border: 1px solid #000000;
@@ -84,7 +86,12 @@ h3 {
 	right: 15px; /* Положение от правого края */
 	line-height: 1px;
 }
-.jus {
-	align: justify
-}
+.center {
+	position: relative;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+ }
 
