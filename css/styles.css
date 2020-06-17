@@ -94,4 +94,9 @@ h3 {
 	left: 0;
 	right: 0;
  }
-
+.text_col p{
+	margin-top: 0.5em; /* Отступ сверху */
+	margin-bottom: 0em; /* Отступ снизу */
+	text-indent: 1.5em; /* Отступ первой строки */
+	text-align: justify; /* Выравнивание по ширине */
+}
