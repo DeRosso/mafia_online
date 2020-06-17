@@ -1,55 +1,56 @@
+/*@media screen and (max-width: 1280px) { div.contentblock {width: 1200px;} }*/
+/*@media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} }*/
+/*@media screen and (max-width: 992px) { div.contentblock {width: 970px;} }*/
+/*@media screen and (max-width: 800px) { div.contentblock {width: 640px;} }*/
+/*@media screen and (max-width: 640px) { div.contentblock {width: 400px;} }*/
 @import url(https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap); /*готический*/
 .newspaper {
 	padding: 20px;
 	background: #e2e2e2;
+	font-style: normal;
+	font-family: "Times New Roman", sans-serif;
+	font-size: large;
 }
 .line_2 {
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
 	padding: 0;
 }
+.hr_top {
+	margin-top: 0;
+	line-height: normal;
+	border-top: 1px solid #000;
+	width: 40%;
+}
+.hr_bot {
+	line-height: normal;
+	border-bottom: 1px solid #000;
+	width: 40%;
+}
 .line_2 p {
 	margin-top: 0!important;
 	margin-bottom: 0!important;
 }
- .frame {
+.frame {
 	 border: 1px solid #000000;
 	 padding: 0;
 	 margin: 0!important;
  }
 h1 {
 	font-size: xx-large;
-	font-style: normal;
-	font-family: Arial, sans-serif;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 h2 {
-	font-size: medium;
-	font-style: normal;
-	font-family: Arial, sans-serif;
-
+	font-size: x-large;
 }
 h3 {
-	font-size: small;
-	font-style: normal;
-	font-family: "Arial";
-
+	font-size: large;
 }
 .text_head {
-	font-size: 500%;
+	font-size: 66pt;
 	font-style: normal;
 	font-family: UnifrakturMaguntia, cursive;
-}
-.button_game {
-	align-items: center;
-	width: 30%;
-	height: 14%;
-	/* background: #002752; */
-	/* float: right; */
-	position: absolute;
-	top: 23%;
-	right: 6%;
-	/* padding: 5px; */
-	border: solid 1px #0c5460;
 }
 .full {
 	display: block;
@@ -94,9 +95,34 @@ h3 {
 	left: 0;
 	right: 0;
  }
+#center {
+	text-align: center;
+	margin: auto;
+}
 .text_col p{
 	margin-top: 0.5em; /* Отступ сверху */
-	margin-bottom: 0em; /* Отступ снизу */
-	text-indent: 1.5em; /* Отступ первой строки */
+	margin-bottom: 0.5em; /* Отступ снизу */
+	/*text-indent: 1.5em; !* Отступ первой строки *!*/
 	text-align: justify; /* Выравнивание по ширине */
 }
+a.link_black {
+	color: #000000; /* Цвет ссылок */
+	text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+a:visited.link_black {
+	color: #000000; /* Цвет посещенных ссылок */
+	font-weight: bold;
+	text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+a:active.link_black {
+	color: #5b514e; /* Цвет активной ссылки */
+	font-weight: bold;
+	text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+a:hover.link_black {
+	color: #000000; /* Цвет ссылки при наведении */
+	font-weight: bold; /* Жирное начертание */
+	text-decoration: none; /* Отменяем подчеркивание у ссылки */
+	background: #bfbfbf; /* Цвет фона */
+}
+
