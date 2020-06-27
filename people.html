@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
 
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
 	<!--	<link rel="shortcut icon" href="/images/favicon.png" type="image/png">-->
 	<meta name="keywords" content="мафия, карточная игра, онлайн игра, играть, с друзьями, логическая, детектив, детективная, играть группой">
 	<meta http-equiv="Content-type" content="text/html charset=utf-8">
@@ -13,22 +13,90 @@
 </head>
 <body>
 <div>
-	<div class="text_head" align="center">
-		<p>The Mafia Online</p>
-	</div>
+	<div class="newspaper fon_skladka">
+		<div class="row">
+			<div class="col-2 center">
+				<p class="frame" align="center" size="50%">
+					"All the News<br>
+					That's Fit to Print"
+				</p>
+			</div>
+			<div class="col">
+				<p class="col text_head" align="center">
+					The Mafia Online
+				</p>
+			</div>
+			<div class="col-2 center">
+				<p class="frame" align="center">Online version of popular game in real time</p>
+			</div>
+		</div> <!--шапка-->
+		<div>
+			<div class="row">
+				<div class="col-3 line_2 pl-4">
+					<p class="">тираж: 10.000</p>
+				</div>
+				<div  class="col line_2" align="center">
+					<script language="javascript" type="text/javascript">
+						var d = new Date();
+						var day=new Array("Воскресенье","Понедельник","Вторник", "Среда","Четверг","Пятница","Суббота");
+						var month=new Array("января","февраля","марта","апреля","мая","июня", "июля","августа","сентября","октября","ноября","декабря");
+						document.write("Мафия Онлайн, "+day[d.getDay()]+", " +d.getDate()+ " " + month[d.getMonth()] + " " + d.getFullYear() + " г.");
+					</script>
+				</div>
+				<div class="col-3 line_2 pr-4">
+					<p align="right">$6,00</p>
+				</div>
+			</div>
+		</div> <!--часы-->
+		<div class="text-center">
+			<h1><i><b>ПЕРСОНАЖИ МАФИЯ ОНЛАЙН И ИХ РОЛИ</b></i></h1>
+		</div>
 	<div class="row">
 		<div class="col-2">
-			<ul>
-				<li><a href="start_game.html">На главную</a></li>
-				<li><a href="people/don.html">Дон мафии</a></li>
-				<li><a href="mafia.html">Мафия</a></li>
-				<li><a href="commissar.html">Комиссар</a></li>
-				<li><a href="doctor.html">Доктор</a></li>
-				<li><a href="immortal.html">Бессмертный</a></li>
-				<li><a href="friend.html">Приятель</a></li>
-				<li><a href="COP.html">Полицейский</a></li>
-				<li><a href="citizen.html">Горожанин</a></li>
-<!--				<select class="" name="">-->
+			<h2 class="text-center"><b>Содержание</b></h2>
+			<hr class="hr_bot">
+			<ul class="left">
+				<li><a href="start_game.html" class="link_black">На главную</a></li>
+				<li><a href="game.html" class="link_black">Начать играть</a></li>
+				<li><a href="new_accaunt.html" class="link_black">Зарегистроваться</a></li>
+				<li><a href="people.html" class="link_black">Личный кабинет</a></li>
+				<li><a href="communication.html" class="link_black">Связаться с нами</a></li>
+			</ul>
+			<br>
+			<hr class="hr_top">
+			<h2 class="text-center"><b>Персонажи</b></h2>
+			<hr class="hr_bot">
+			<ul class="left">
+				<h3><b>За мафию:</b></h3>
+				<li><a href="people/don.html" class="link_black">Дон мафии</a></li>
+				<li><a href="people/mafia.html" class="link_black">Мафия</a></li>
+				<li><a href="people/lawyer.html" class="link_black">Адвокат</a></li>
+				<li><a href="people/bully.html" class="link_black">Хулиган</a></li>
+				<br>
+				<h3><b>За город:</b></h3>
+				<li><a href="people/commissar.html" class="link_black">Комиссар</a></li>
+				<li><a href="people/sherif.html" class="link_black">Шериф</a></li>
+				<li><a href="people/cop.html" class="link_black">Полицейский</a></li>
+				<li><a href="people/doctor.html" class="link_black">Доктор</a></li>
+				<li><a href="people/agent.html" class="link_black">Агент</a></li>
+				<li><a href="people/journalist.html" class="link_black">Журналист</a></li>
+				<li><a href="people/friend.html" class="link_black">Приятель</a></li>
+				<li><a href="people/bodyguard.html" class="link_black">Телохранитель</a></li>
+				<li><a href="people/resuscitator.html" class="link_black">Реаниматор</a></li>
+				<li><a href="people/immortal.html" class="link_black">Бессмертный</a></li>
+				<li><a href="people/unlucky.html" class="link_black">Невезучий</a></li>
+				<li><a href="people/citizen.html" class="link_black">Горожанин</a></li>
+				<br>
+				<h3><b>За себя:</b></h3>
+				<li><a href="people/maniac.html" class="link_black">Маньяк</a></li>
+				<li><a href="people/slanderer.html" class="link_black">Клеветник</a></li>
+				<br>
+				<h3><b>За Якудза:</b></h3>
+				<li><a href="people/yakudza.html" class="link_black">Якудза</a></li>
+				<li><a href="people/ninja.html" class="link_black">Ниндзя</a></li>
+				<li><a href="people/kamikadze.html" class="link_black">Камикадзе</a></li>
+				<br>
+				<!--				<select class="" name="">-->
 <!--					<option value="Дон мафии"> Дон мафии </option>-->
 <!--					<option value="Мафия"> Мафия </option>-->
 <!--					<option value="Комиссар"> Комиссар </option>-->
@@ -38,7 +106,7 @@
 <!--				</select>-->
 			</ul>
 		</div>
-		<div class="col">
+		<div class="line_left col column_3 text_col" align="justify">
 			<p> <b>Персонажи</b> в Мафии Онлайн занимают несколько сторон.
 				Одна сторона играет на стороне города, другая против города.
 				Есть персонажи, которые играют сами за себя (например, Маньяк).
@@ -48,7 +116,26 @@
 
 
 </div>
-</body>
+</div>
+<footer class="newspaper p-4 fon_skladka">
+	<div class="line_2 row small">
+		<div class="col-1 pl-4 center">
+			<img src="img/logotype.png" width="100%" height="" alt="логотип">
+		</div>
+		<div class="col">
+			<p>
+				Редакторская группа: РДС<br>
+				Адрес редакции: Мутный город, улица 30-х годов Америки, корпус Б, офис 326<br>
+				Телефон редакции: 322-233-322<br>
+				Почтовый адрес редакции: mafiaonline@mo.ru
+			</p>
+		</div>
+		<div class="col-2 center">
+			<p>&copy; Copirithg РДС</p>
+		</div>
+	</div>
+</footer>
 <script src="js/libs/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
+</body>
 </html>

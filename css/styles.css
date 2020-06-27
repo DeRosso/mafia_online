@@ -1,15 +1,48 @@
 @import url(https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap); /*готический*/
+@font-face {
+	font-family: "Nexa Script Thin"; /* Гарнитура шрифта */
+	src: url("../fonts/Nexa Script Thin.ttf"); /* Для IE5-8 */
+	src: local(Nexa Script Thin), url("../fonts/Nexa Script Thin.ttf"); /* Для остальных браузеров */
+}
+@import url(color.css) screen and (color);
+
 @media screen and (max-width: 1280px) { div.contentblock {width: 1200px;} }
 @media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} }
-@media screen and (max-width: 992px) { div.contentblock {width: 970px;} }
+@media screen and (max-width: 1024px) { div.contentblock {width: 970px;} }
 @media screen and (max-width: 800px) { div.contentblock {width: 640px;} }
 @media screen and (max-width: 640px) { div.contentblock {width: 400px;} }
+@media screen and (max-width: 480px) { div.contentblock {width: 400px;} }
 .newspaper {
 	padding: 20px;
 	background: #e2e2e2;
 	font-style: normal;
-	font-family: "Times New Roman", sans-serif;
-	font-size: large;
+	font-family: Georgia;
+	font-size: medium;
+}
+.text_head {
+	font-size: 66pt;
+	font-style: normal;
+	font-family: UnifrakturMaguntia, cursive;
+}
+.card_tip {
+	padding: 20px;
+	/*margin: 0;*/
+	margin-top: 5px;
+	background-image: url("../img/card.png");
+	font-style: normal;
+	font-family: Arial,;
+	font-size: 19pt;
+	line-height: 1em;
+}
+.card_hend {
+	padding: 20px;
+	/*margin-top: 6px;*/
+	background-image: url("../img/card.png");
+	font-style: normal;
+	font-family: Nexa Script Thin;
+	font-size: 25pt;
+	color: #6f326f;
+	line-height: 1em;
 }
 .line_2 {
 	border-top: 1px solid #000;
@@ -21,6 +54,11 @@
 	line-height: normal;
 	border-top: 1px solid #000;
 	width: 40%;
+}
+.hr_100 {
+	margin-top: 0;
+	line-height: normal;
+	border-top: 1px solid #000;
 }
 .hr_bot {
 	line-height: normal;
@@ -47,18 +85,26 @@ h2 {
 h3 {
 	font-size: large;
 }
-.text_head {
-	font-size: 66pt;
-	font-style: normal;
-	font-family: UnifrakturMaguntia, cursive;
-}
 .full {
 	display: block;
 	text-align: center;
 	width: 100%;
 	height: 100%;
 }
-.column {
+.column_2 {
+	-webkit-column-width: 40%;
+	-moz-column-width: 40%;
+	column-width: 40%;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 5%;
+	-moz-column-gap: 5%;
+	column-gap: 5%;
+	-webkit-column-rule: 1px solid #000000;
+	-moz-column-rule: 1px solid #000000;
+	column-rule: 1px solid #000000;
+}.column_3 {
 	-webkit-column-width: 30%;
 	-moz-column-width: 30%;
 	column-width: 30%;
@@ -72,21 +118,6 @@ h3 {
 	-moz-column-rule: 1px solid #000000;
 	column-rule: 1px solid #000000;
 }
-.leftimg {
-	float:left; /* Выравнивание по левому краю */
-	margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
-}
-.rightimg  {
-	display: inline-block;
-	float: right; /* Выравнивание по правому краю  */
-	margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
-}
-.pic_right {
-	position: relative; /* Абсолютное позиционирование */
-	top: 50%; /* Положение от верхнего края */
-	right: 15px; /* Положение от правого края */
-	line-height: 1px;
-}
 .center {
 	position: relative;
 	margin: auto;
@@ -95,15 +126,32 @@ h3 {
 	left: 0;
 	right: 0;
  }
+.shtamp {
+	position: absolute;
+	margin: auto;
+	top: 0px;
+	right: 15px;
+	/*bottom: 0;*/
+	/*left: 0;*/
+ }
 #center {
 	text-align: center;
 	margin: auto;
 }
-.text_col p{
+.text_col p {
 	margin-top: 0.5em; /* Отступ сверху */
 	margin-bottom: 0.5em; /* Отступ снизу */
-	/*text-indent: 1.5em; !* Отступ первой строки *!*/
+	text-indent: 1em; /* Отступ первой строки */
 	text-align: justify; /* Выравнивание по ширине */
+	/*перенос текста*/
+	width: 100%;
+	hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+}
+.line_left {
+	border-left: 1px solid #000000;
 }
 a.link_black {
 	color: #000000; /* Цвет ссылок */
@@ -125,4 +173,26 @@ a:hover.link_black {
 	text-decoration: none; /* Отменяем подчеркивание у ссылки */
 	background: #bfbfbf; /* Цвет фона */
 }
-
+.fon_skladka {
+	background-image: url("../img/skladka_5.png");
+	/*background-color: #e2e2e2;*/
+	width: 100%;
+	/*background-color: rgba(226, 226, 226, 0.5);*/
+	/*opacity: 0.5;*/
+}
+.fon_card {
+	background-image: url("../img/card.png");
+	/*background-color: #e2e2e2;*/
+	width: 100%;
+	/*background-color: rgba(226, 226, 226, 0.5);*/
+	/*opacity: 0.5;*/
+}
+.left {
+	margin: 0; /* Обнуляем значение отступов */
+	padding-left: 15px; /* Значение полей */
+}
+.red {
+	/*text-decoration-color: #de1111;*/
+	text-decoration: #de1111 underline;
+	/*text-decoration-line: underline;*/
+}
