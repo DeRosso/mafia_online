@@ -12,6 +12,17 @@
 @media screen and (max-width: 800px) { div.contentblock {width: 640px;} }
 @media screen and (max-width: 640px) { div.contentblock {width: 400px;} }
 @media screen and (max-width: 480px) { div.contentblock {width: 400px;} }
+h1 {
+	font-size: xx-large;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+h2 {
+	font-size: x-large;
+}
+h3 {
+	font-size: large;
+}
 .newspaper {
 	padding: 20px;
 	background: #e2e2e2;
@@ -74,17 +85,6 @@
 	 padding: 0;
 	 margin: 0!important;
  }
-h1 {
-	font-size: xx-large;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-h2 {
-	font-size: x-large;
-}
-h3 {
-	font-size: large;
-}
 .full {
 	display: block;
 	text-align: center;
@@ -104,7 +104,8 @@ h3 {
 	-webkit-column-rule: 1px solid #000000;
 	-moz-column-rule: 1px solid #000000;
 	column-rule: 1px solid #000000;
-}.column_3 {
+}
+.column_3 {
 	-webkit-column-width: 30%;
 	-moz-column-width: 30%;
 	column-width: 30%;
@@ -131,9 +132,61 @@ h3 {
 	margin: auto;
 	top: 0px;
 	right: 15px;
-	/*bottom: 0;*/
-	/*left: 0;*/
+}
+.poz_1 {
+	position: absolute;
+	margin: auto;
+	top: 15%;
+	left: 15%;
+}
+.poz_2 {
+	 position: absolute;
+	 margin: auto;
+	 top: 15%;
+	 left: 50%;
  }
+.poz_3 {
+	 position: absolute;
+	 margin: auto;
+	 top: 15%;
+	 left: 85%;
+}
+.poz_4 {
+	position: absolute;
+	margin: auto;
+	top: 50%;
+	left: 15%;
+}
+.poz_5 {
+	position: absolute;
+	margin: auto;
+	top: 50%;
+	left: 50%;
+}
+.poz_6 {
+	position: absolute;
+	margin: auto;
+	top: 50%;
+	left: 85%;
+}
+.poz_7 {
+	position: absolute;
+	margin: auto;
+	top: 85%;
+	left: 15%;
+}
+.poz_8 {
+	position: absolute;
+	margin: auto;
+	top: 85%;
+	left: 50%;
+}
+.poz_9 {
+	position: absolute;
+	margin: auto;
+	top: 85%;
+	left: 85%;
+}
 #center {
 	text-align: center;
 	margin: auto;
@@ -152,6 +205,24 @@ h3 {
 }
 .line_left {
 	border-left: 1px solid #000000;
+}
+input:hover.link_black {
+    background: #bfbfbf; /* Цвет фона */
+}
+tr:hover.link_black {
+	background: #bfbfbf; /* Цвет фона */
+}
+.w-150 {
+	width: 150px;
+}
+.w-200 {
+	width: 200px;
+}
+.w-250 {
+	width: 250px;
+}
+.w-300 {
+	width: 300px;
 }
 a.link_black {
 	color: #000000; /* Цвет ссылок */
@@ -174,7 +245,7 @@ a:hover.link_black {
 	background: #bfbfbf; /* Цвет фона */
 }
 .fon_skladka {
-	background-image: url("../img/skladka_5.png");
+	background-image: url("../img/skladka.png");
 	/*background-color: #e2e2e2;*/
 	width: 100%;
 	/*background-color: rgba(226, 226, 226, 0.5);*/
@@ -196,3 +267,4 @@ a:hover.link_black {
 	text-decoration: #de1111 underline;
 	/*text-decoration-line: underline;*/
 }
+/*hyphens: auto;*/
