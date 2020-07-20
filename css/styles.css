@@ -39,16 +39,16 @@ h3 {
 	padding: 20px;
 	/*margin: 0;*/
 	margin-top: 5px;
-	background-image: url("../img/card.png");
+	background-image: url("../img/fon_card.png");
 	font-style: normal;
-	font-family: Arial,;
+	font-family: Arial;
 	font-size: 19pt;
 	line-height: 1em;
 }
 .card_hend {
 	padding: 20px;
 	/*margin-top: 6px;*/
-	background-image: url("../img/card.png");
+	background-image: url("../img/fon_card.png");
 	font-style: normal;
 	font-family: Nexa Script Thin;
 	font-size: 25pt;
